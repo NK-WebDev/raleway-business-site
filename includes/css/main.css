@@ -1,0 +1,118 @@
+/*********************************************
+Author: Nirjan Khadka
+URL: 
+Details: Raleway company site
+Date: 2017//7/4
+**********************************************/
+
+/********* color guide *********
+#ebd305 - yellow (accent color)
+#131313 - black (contact form)
+#0a0a0a - black(text field)
+#111 - black(footer)
+
+/********* Typography **************
+'Raleway'(bold) + 'Raleway extra-light' - headers
+'Raleway' - paragrapghs
+
+/******************************************
+1. Reset
+2. Grid
+3. Typography style
+4. Nav
+5. Header
+6. Main
+7. Footer
+8. Media Queries
+*******************************************/
+
+/************ Reset ***********************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+body {
+    font-size: 62.5%;
+    line-height: 1;
+    background-color: #fff;
+}
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{ 
+  text-decoration: none;
+  display: inline-block;
+ }
+
+/*********** Grid ***********************/
+.col-flex{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-flow:column;
+          flex-flow:column;
+  -webkit-box-align:start;
+      -ms-flex-align:start;
+          align-items:flex-start;
+}
+ 
+ .row{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-pack:distribute;
+      justify-content:space-around;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+}
+.col{
+  padding:1%;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+}
+.col{ -webkit-box-flex:0; -ms-flex:0 1 96%; flex:0 1 96%; }
+
+@media screen and (min-width:520px) and (max-width:800px){
+  .col{ -webkit-box-flex:0; -ms-flex:0 1 46%; flex:0 1 46%; }
+  .row{ -ms-flex-wrap:wrap; flex-wrap:wrap; }
+}
+
+@media screen and (min-width:800px){
+  .col{ -webkit-box-flex:0; -ms-flex:0 1 29.33%; flex:0 1 29.33%; }
+}
+
+/*********** Typography *******************/
+/*********** Nav ************************/
+/*********** Header ********************/
+/*********** Main **********************/
+/*********** Footer ********************/
+/*********** Media Queries *************/
