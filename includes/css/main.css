@@ -113,11 +113,28 @@ a{
 /*********** Typography *******************/
 h1{ font: 2.4em Helvetica,sans-serif; }
 a{font: 1.8em Helvetica,sans-serif;}
-/*********** Nav ************************/
-body{
-  background: rgba(0,0,0,0.8);
+.hero-header,.hero-text,.btn-cta{
+  font-family: Helvetica,sans-serif;
+  font-weight: 100;
 }
+.hero-header{
+  font-size: 6em;
+}
+.hero-text{
+  font-size: 3em;
+  font-style: italic;
+  letter-spacing: 0.1em
+}
+.btn-cta{
+  font-size:2.4em;
+  color: #ebd305;
+}
+/*********** Nav ************************/
 header#page-header{
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,15 +190,43 @@ header#page-header.scroll{
 header#page-header.scroll h1,header#page-header.scroll .nav-item{
   padding-bottom: 5px;
 }
-/*********** Header ********************/
 /*********** Main **********************/
-section>article{
-  background: tomato;
+
+/*********** hero *******************/
+#hero-img{
+  background-blend-mode:multiply;
+  text-align: center;
+  background: #444 url(../../img/hero.jpg) no-repeat center;
+  height: 100vh;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
 }
-section{
-  background: chocolate;
-  color:#fff;
-  font-size: 2.1em;
+.hero-text{
+  margin: 2em 0;
+}
+.btn-cta{
+  border: 3px solid #fff;
+  padding: 1% 4%; 
+  -webkit-transition:background 0.3s; 
+  transition:background 0.3s;
+}
+.btn-cta:hover{
+  background: #000;
 }
 /*********** Footer ********************/
 /*********** Media Queries *************/
@@ -192,9 +237,6 @@ section{
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-  }
-  article{
-    padding-top: 20%
   }
   nav,.nav-item{
     display: block;
@@ -221,4 +263,12 @@ section{
   .nav-toggle{
     display: inline-block!important;
   }
+  .hero-header{
+    font-size: 4em;
+  }
+  .hero-text{
+    margin:1.5em;
+    font-size: 2.5em;
+  }
+
 }
