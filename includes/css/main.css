@@ -112,7 +112,7 @@ a{
 
 /*********** Typography *******************/
 h1{ font: 2.4em Helvetica,sans-serif; }
-a{font: 1.8em Helvetica,sans-serif;}
+a{font: 2em Helvetica,sans-serif;}
 .hero-header,.hero-text,.btn-cta{
   font-family: Helvetica,sans-serif;
   font-weight: 100;
@@ -230,7 +230,7 @@ header#page-header.scroll h1,header#page-header.scroll .nav-item{
 }
 /*********** Footer ********************/
 /*********** Media Queries *************/
-@media screen and (max-width: 735px){
+@media screen and (max-width: 805px){
   header#page-header{
     background: #000;
     position: fixed;
