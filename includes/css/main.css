@@ -134,12 +134,11 @@ a{font: 2em Helvetica,sans-serif;}
   color: #ebd305;
 }
 h2{
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   font: 3.5em Garamond serif;
   text-decoration: underline yellow;
   text-underline-position: under;
 }
+
 h3{
   font: 3em Helvetica sans-serif;
   color: #000;
@@ -151,8 +150,12 @@ h3{
 p{
   font: 2em Helvetica,sans-serif;
 }
+#testimonials i{
+  font-size: 3em;
+}
 /*********** Nav ************************/
 header#page-header{
+  z-index: 2000;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -256,6 +259,10 @@ header#page-header.scroll h1,header#page-header.scroll .nav-item{
   text-align: center;
   margin-top: 10em;
 }
+#intro h2{
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
 #intro > p{
   margin: 5em 0;
 }
@@ -279,6 +286,107 @@ header#page-header.scroll h1,header#page-header.scroll .nav-item{
 }
 .feature h3{
   margin: 1em 0;
+}
+/***********testtimonials******************/
+.carousel{
+  position: relative;
+  margin:5em auto;
+  max-width: 630px;
+  height: 525px;
+}
+.bold{
+  font-weight: bolder;
+}
+.testimonial{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity:0;
+  -webkit-transition: opacity 5s ease-out;
+  transition: opacity 5s ease-out;
+}
+.testimonial.active{
+  opacity: 1;
+  -webkit-transition: opacity 5s ease-in;
+  transition: opacity 5s ease-in;
+}
+#testimonials{
+  text-align: center;
+  margin: 5% 0;
+}
+#testimonials h2{
+  margin: 1em 0;
+}
+
+figcaption{
+  font: 1.8em Helvetica sans-serif;
+  margin: 2em 0;
+}
+
+.slide-indicator{
+  width: 38px;
+  height: 8px;
+  background-color:grey;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  
+}
+.slide-indicator.active{
+  background: #ebd305;
+}
+.indicators{
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/*** blog #ebd305 **/
+#blog{
+  text-align: center;
+  background: rgba(235, 211, 5, 0.7) url('../../img/blog-background.jpg') no-repeat center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding: 2% 0;
+}
+#blog h2{
+  text-decoration: underline white;
+}
+#blog p{
+  max-width: 265px;
+  margin: 2em auto;
+  color: white;
+}
+.featured-blogs{
+  margin-top: 3em;
+}
+.blog a i{
+  color: white;
+  font-size: 1.4em;
+  margin: 0 10px;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.blog a i:hover{
+  color: black;
+}
+.blog a{
+  position: relative;
+}
+.blog{
+  margin: 2em 0;
+}
+.blog a:after{
+  content:attr(title);
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*********** Footer ********************/
 /*********** Media Queries *************/
