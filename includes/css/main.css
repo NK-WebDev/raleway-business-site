@@ -99,7 +99,9 @@ a{
   padding:1%;
   -webkit-box-sizing:border-box;
           box-sizing:border-box;
+  margin-bottom: 2em;
 }
+
 .col{ -webkit-box-flex:1; -ms-flex:1 1 100%; flex:1 1 100%; }
 
 @media screen and (min-width:600px) and (max-width:900px){
@@ -133,7 +135,7 @@ a{font: 2em Helvetica,sans-serif;}
   font-size:2.4em;
   color: #ebd305;
 }
-h2{
+h2,h5{
   font: 3.5em Garamond serif;
   text-decoration: underline yellow;
   text-underline-position: under;
@@ -219,7 +221,7 @@ header#page-header.scroll h1,header#page-header.scroll .nav-item{
 
 /*********** hero *******************/
 #hero-img{
-  background-attachment:fixed;
+  background-attachment:fixed!important;
   background-blend-mode: overlay;
   text-align: center;
   background: #444 url(../../img/hero.jpg) no-repeat center;
@@ -347,10 +349,12 @@ figcaption{
 /*** blog #ebd305 **/
 #blog{
   text-align: center;
-  background: rgba(235, 211, 5, 0.7) url('../../img/blog-background.jpg') no-repeat center;
+  background: rgba(235, 211, 5, 0.7) url('../../img/blog-background.jpg') no-repeat center center;
   background-size: cover;
   background-blend-mode: overlay;
   padding: 2% 0;
+  background-attachment: fixed;
+
 }
 #blog h2{
   text-decoration: underline white;
@@ -363,14 +367,14 @@ figcaption{
 .featured-blogs{
   margin-top: 3em;
 }
-.blog a i{
+.social a i{
   color: white;
   font-size: 1.4em;
   margin: 0 10px;
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
 }
-.blog a i:hover{
+.social a i:hover{
   color: black;
 }
 .blog a{
@@ -388,7 +392,103 @@ figcaption{
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+/** subscribtion form **/
+#subscription-form{
+  background: #131313;
+  padding: 5% 2%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+#subscription-form form{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+}
+#subscription-form h3{
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: white;
+  font-size: 2.4em;
+  text-align: center;
+  margin-bottom: 0.5em;
+  margin-right: 2em;
+}
+#subscription-form form input[type="email"]{
+  padding: 1% 1%;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-size: 1.8em;
+  background: #0a0a0a;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+#subscription-form form input[type="button"]{
+  background: #ebd305;
+  border: none;
+  font-size: 1.8em;
+  padding: 1% 5%;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-shadow:inset 0px -3px 0px rgba(0,0,0,0.6);
+          box-shadow:inset 0px -3px 0px rgba(0,0,0,0.6);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /*********** Footer ********************/
+.wrapper{
+  width: 84%;
+  margin: 0 auto;
+}
+footer{
+  background: #111; 
+  padding: 2% 0;
+  color: #fff;
+}
+footer h5{
+  font-size: 2.4em;
+}
+footer p{
+  margin: 1em 0;
+}
+.no-underline{
+  text-decoration: none;
+}
+blockquote{
+  margin:1em ;
+}
+blockquote p{
+  font-style:italic;
+}
+
+cite{
+  font-size: 1.8em;
+}
+footer ul{
+  margin-top: 1em;
+}
+footer li a{
+  padding: 0.5em 0;
+  border-bottom: 1px solid;
+  color: #fff;
+}
+footer li:before{
+  content: '+ ';
+}
 /*********** Media Queries *************/
 @media screen and (max-width: 805px){
   header#page-header{
@@ -431,4 +531,14 @@ figcaption{
     font-size: 2.5em;
   }
 
+}
+@media screen and (max-width: 905px) {
+  #blog{
+    background: rgba(235, 211, 5, 0.7);
+  }  
+}
+@media screen and (max-width: 960px){
+  .wrapper{
+    width: 100%;
+  }
 }
