@@ -149,12 +149,8 @@ h3{
   font-size: 6em;
   color: #fff;
 }
-p{
-  font: 2em Helvetica,sans-serif;
-}
-#testimonials i{
-  font-size: 3em;
-}
+p{ font: 2em Helvetica,sans-serif; }
+#testimonials i{ font-size: 3em; }
 /*********** Nav ************************/
 header#page-header{
   z-index: 2000;
@@ -196,9 +192,7 @@ nav{
   -webkit-transition: border-color 0.4s;
   transition: border-color 0.4s;
 }
-.nav-item:hover{
-  border-bottom-color:#fff;
-}
+.nav-item:hover{ border-bottom-color:#fff; }
 .yellow-text{ color:#ebd305; }
 #page-header h1{padding-bottom: 15px;}
 .nav-toggle{
@@ -214,9 +208,7 @@ header#page-header.scroll{
   width: 100%;
 
 }
-header#page-header.scroll h1,header#page-header.scroll .nav-item{
-  padding-bottom: 5px;
-}
+header#page-header.scroll h1,header#page-header.scroll .nav-item{ padding-bottom: 5px; }
 /*********** Main **********************/
 
 /*********** hero *******************/
@@ -244,18 +236,14 @@ header#page-header.scroll h1,header#page-header.scroll .nav-item{
           flex-direction: column;
   color: #fff;
 }
-.hero-text{
-  margin: 2em 0;
-}
+.hero-text{ margin: 2em 0;}
 .btn-cta{
   border: 3px solid #fff;
   padding: 1% 4%; 
   -webkit-transition:background 0.3s; 
   transition:background 0.3s;
 }
-.btn-cta:hover{
-  background: #000;
-}
+.btn-cta:hover{ background: #000; }
 /************* intro *************/
 #intro {
   text-align: center;
@@ -265,9 +253,7 @@ header#page-header.scroll h1,header#page-header.scroll .nav-item{
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-#intro > p{
-  margin: 5em 0;
-}
+#intro > p{ margin: 5em 0; }
 .feature{
   background:#ebd305;
   margin: 1em 0;
@@ -286,19 +272,15 @@ header#page-header.scroll h1,header#page-header.scroll .nav-item{
   border-radius: 50%;
   padding: 25px 30px
 }
-.feature h3{
-  margin: 1em 0;
-}
-/***********testtimonials******************/
+.feature h3{ margin: 1em 0; }
+/***********testimonials******************/
 .carousel{
   position: relative;
   margin:5em auto;
   max-width: 630px;
   height: 525px;
 }
-.bold{
-  font-weight: bolder;
-}
+.bold{ font-weight: bolder; }
 .testimonial{
   position: absolute;
   top: 0;
@@ -318,9 +300,7 @@ header#page-header.scroll h1,header#page-header.scroll .nav-item{
   text-align: center;
   margin: 5% 0;
 }
-#testimonials h2{
-  margin: 1em 0;
-}
+#testimonials h2{ margin: 1em 0; }
 
 figcaption{
   font: 1.8em Helvetica sans-serif;
@@ -328,17 +308,15 @@ figcaption{
 }
 
 .slide-indicator{
-  width: 38px;
+  width: 30px;
   height: 8px;
   background-color:grey;
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 8px;
   cursor: pointer;
   
 }
-.slide-indicator.active{
-  background: #ebd305;
-}
+.slide-indicator.active{ background: #ebd305; }
 .indicators{
   position: absolute;
   bottom: 0px;
@@ -354,19 +332,14 @@ figcaption{
   background-blend-mode: overlay;
   padding: 2% 0;
   background-attachment: fixed;
-
 }
-#blog h2{
-  text-decoration: underline white;
-}
+#blog h2{ text-decoration: underline white; }
 #blog p{
   max-width: 265px;
   margin: 2em auto;
   color: white;
 }
-.featured-blogs{
-  margin-top: 3em;
-}
+.featured-blogs{ margin-top: 3em; }
 .social a i{
   color: white;
   font-size: 1.4em;
@@ -374,15 +347,12 @@ figcaption{
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
 }
-.social a i:hover{
-  color: black;
+.blog img{
+  width: 100%;
 }
-.blog a{
-  position: relative;
-}
-.blog{
-  margin: 2em 0;
-}
+.social a i:hover{ color: black; }
+.blog a{ position: relative; }
+.blog{ margin: 2em 0;}
 .blog a:after{
   content:attr(title);
   position: absolute;
@@ -394,6 +364,8 @@ figcaption{
 }
 /** subscribtion form **/
 #subscription-form{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #131313;
   padding: 5% 2%;
   -webkit-box-align: baseline;
@@ -421,26 +393,30 @@ figcaption{
   text-align: center;
   margin-bottom: 0.5em;
   margin-right: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 #subscription-form form input[type="email"]{
   padding: 1% 1%;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   font-size: 1.8em;
   background: #0a0a0a;
   outline: none;
   border: none;
   color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 #subscription-form form input[type="button"]{
   background: #ebd305;
   border: none;
   font-size: 1.8em;
-  padding: 1% 5%;
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
+  padding: 1% 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
   cursor: pointer;
   -webkit-box-shadow:inset 0px -3px 0px rgba(0,0,0,0.6);
@@ -540,5 +516,17 @@ footer li:before{
 @media screen and (max-width: 960px){
   .wrapper{
     width: 100%;
+  }
+}
+@media screen and (max-width: 340px){
+  #subscription-form form{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #subscription-form form input[type="email"]{
+    margin-bottom: 10px;
+  }
+  .testimonial p{
+    font-size: 1.8em;
   }
 }
